@@ -1,0 +1,21 @@
+---
+const {
+    title= "You are a programmer, Lola!",
+} = Astro.props;
+---
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+	<meta name="viewport" content="width=device-width" />
+	<title>{title}</title>
+</head>
+
+<body>
+    <main class="content">
+        <slot />
+    </main>
+</body>
+
+</html>

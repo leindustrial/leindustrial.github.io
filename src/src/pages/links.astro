@@ -1,0 +1,17 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Links | Lola">
+    <Header />
+    <a href="https://www.youtube.com/@leindustrial">youtube</a><br>
+    <a href="https://instagram.com/le_industrial">instagram</a>
+</BaseLayout>
+
+<style>
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
