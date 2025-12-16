@@ -2,16 +2,17 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Gradient from "../components/GradientBG";
 ---
 
 <BaseLayout title="Links | Lola">
-    <Header />
-    <a href="https://www.youtube.com/@leindustrial">youtube</a><br>
-    <a href="https://instagram.com/le_industrial">instagram</a>
+    <div>
+        <div class="flex h-[60vh] items-center justify-center text-3xl mb-25 text-center">
+		<p>
+            <a href="https://github.com/leindustrial">github</a><br>
+            <a href="https://www.youtube.com/@leindustrial">youtube</a><br>
+            <a href="https://instagram.com/le_industrial">instagram</a>
+		</p></div>
+		<Gradient client:load />
+	</div>
 </BaseLayout>
-
-<style>
-    a:hover {
-        text-decoration: underline;
-    }
-</style>

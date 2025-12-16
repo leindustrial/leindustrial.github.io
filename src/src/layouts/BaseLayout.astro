@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.astro";
+
 const {
     title= "You are a programmer, Lola!",
 } = Astro.props;
@@ -13,6 +15,7 @@ const {
 </head>
 
 <body>
+    <Header />
     <main class="content">
         <slot />
     </main>
