@@ -6,18 +6,23 @@ import Gradient from "../components/GradientBG";
 ---
 
 <BaseLayout>
-	<div>
-		<p class="relative h-[60vh] flex items-center justify-center text-3xl mb-25">
-			You are a programmer, Lola!
+	<div class="h-[80vh]">
+		<Header />
+		<p class="relative flex items-center justify-center text-3xl text-center mt-[30vh]">
+			You are a&nbsp;programmer, Lola!
 		</p>
-		<Gradient client:load />
+		<Gradient client:load height="80vh" preset ="jellyfish"/>
 	</div>
-	<!-- <h1 class="m-5">Wow, this is my website that I made myself 💚</h1> -->
-	<p class="m-5">
-		How this website was made:<br>
-		<a href="https://astro.build"><span class="text-pink-200">Astro</span></a> - a JavaScript web framework optimized for building fast, content-driven websites.<br>
-		<a href="https://tailwindcss.com"><span class="text-pink-200">Tailwind</span></a> - a utility-first CSS framework packed with classes that can be composed to build any design, directly in the markup.<br>
-		<a href="https://react.dev"><span class="text-pink-200">React</span></a> - a front-end JavaScript library that aims to make building user interfaces based on components.<br>
-		<a href="https://shadergradient.co/"><span class="text-pink-200">ShaderGradient</span></a> - a tool for cool animated background gradients, that can be used together with React.
-	</p>
+	<div class="absolute m-5 space-y-4">
+		<p>
+			How this website was made:
+		</p>
+		<ul class="space-y-4 max-w-2xl">
+			<li><a href="https://astro.build"><span class="text-pink-200">Astro</span></a> - a JavaScript web framework optimized for building fast, content-driven websites.</li>
+			<li><a href="https://tailwindcss.com"><span class="text-pink-200">Tailwind</span></a> - a utility-first CSS framework packed with classes that can be composed to build any design, directly in the markup.</li>
+			<li><a href="https://react.dev"><span class="text-pink-200">React</span></a> - a front-end JavaScript library that aims to make building user interfaces based on components.</li>
+			<li><a href="https://shadergradient.co/"><span class="text-pink-200">ShaderGradient</span></a> - a tool for cool animated background gradients, that can be used together with React.</li>
+		<ul>
+	</div>
+
 </BaseLayout>

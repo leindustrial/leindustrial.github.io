@@ -7,12 +7,15 @@ import Gradient from "../components/GradientBG";
 
 <BaseLayout title="Links | Lola">
     <div>
-        <div class="flex h-[60vh] items-center justify-center text-3xl mb-25 text-center">
-		<p>
-            <a href="https://github.com/leindustrial">github</a><br>
-            <a href="https://www.youtube.com/@leindustrial">youtube</a><br>
-            <a href="https://instagram.com/le_industrial">instagram</a>
-		</p></div>
-		<Gradient client:load />
+        <Header />
+        <div class="flex items-center justify-center text-3xl text-center mt-[30vh]">
+            <ul class="space-y-4">
+                <li><a href="https://github.com/leindustrial">github</a></li>
+                <li><a href="https://www.youtube.com/@leindustrial">youtube</a></li>
+                <li><a href="https://instagram.com/le_industrial">instagram</a></li>
+                <li><a href="https://linkedin.com/in/leindustrial/">linkedin</a></li>
+            </ul>
+        </div>
+		<Gradient client:load height="100vh" preset ="aurora"/>
 	</div>
 </BaseLayout>
